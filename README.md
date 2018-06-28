@@ -1,4 +1,4 @@
-# CountryBlocker
+# CountryBlocker using php
 A tool/add-on to website that blocks user's from a certain country from viewing the site. 
 
 HOW TO USE:
@@ -19,7 +19,7 @@ function checkifblocked($country){
 
         else{
 
-          header(""); EDIT HERE: path to your webpage</b>
+          header(""); # EDIT HERE: path to your webpage</b>
         }
 
     }
@@ -36,3 +36,8 @@ function checkifblocked($country){
             ?>
  
  3. Configure Blocked countries by Navigating to config.php
+               
+
+![alt text](img/screenshot.png)
+
+
