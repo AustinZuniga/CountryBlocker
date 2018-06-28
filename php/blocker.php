@@ -54,7 +54,15 @@ class SiteRestriction{
 
         if (file_exists('src/blocked_country.txt') ) {
           // get data from file blocked_country.txt
-          $deny_country = explode("\n", file_get_contents('src/blocked_country.txt'));
+            $filename = 'src/blocked_country.txt';
+            $fp = @fopen($filename, 'r'); 
+
+// Add each line to an array
+             if ($fp) {
+            $deny_country = explode("\n", fread($fp, filesize($filename)));
+                }
+
+         // $deny_country = explode("\n", file_get_contents('src/blocked_country.txt'));
         } 
         // check if user's country is in blocked list
         if ( (array_search($country, $deny_country))!== FALSE ) {
@@ -66,7 +74,7 @@ class SiteRestriction{
 
         else{
 
-          header("Location: index.php");
+          header("index.php");
         }
 
     }
