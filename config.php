@@ -4,33 +4,41 @@
 	<title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 	<style>
 		h1{
-			margin-top: 30px;
+			margin-top: 0px;
 		}
 		body {
-    background-image: url("img/index.jpg");
-}
+    		background-image: url("img/index.jpg");
+		}
+		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   background-color: grey;
+		   color: white;
+		   text-align: center;
+		}
 
 	</style>
 </head>
 <body>
-	<div class="container">
-
-		<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">COUNTRY BLOCKER</a>
+      <a class="navbar-brand" href="https://github.com/AustinZuniga/CountryBlocker" style="color:  	#DC143C;">COUNTRY BLOCKER</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="index.php">Go to Site</a></li>
+      <li><a href="https://github.com/AustinZuniga/CountryBlocker">About</a></li>
     </ul>
   </div>
 </nav>
-
+	<div class="container">
 
 		<h1>Blocked Countries</h1>
 		<div class="col-md-12">
@@ -133,6 +141,9 @@
 		  </div>
 		</div>
 
+</div>
+<div class="footer">
+  <p>Created By: Earl Austin A. Zuniga (2018)</p>
 </div>
 </body>
 </html>

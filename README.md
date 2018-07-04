@@ -41,3 +41,14 @@ function checkifblocked($country){
 ![alt text](img/screenshot.png)
 
 
+
+
+
+If the user's country is not blocked
+
+ ![alt text](img/screenshot2.png)
+
+
+If the user's country is blocked this page will appear
+
+ ![alt text](img/screenshot3.png)
