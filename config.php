@@ -75,7 +75,7 @@
 		      </div>
 		      <div class="modal-body">
 			        <p>Select Country</p>
-			        <form method="POST" action="php/change_blacklist.php">
+			        <form method="POST" action="php/blocker.php">
 			        <select name="countries">
 				        <?php
 							$file = fopen("src/country_list.txt","r");
@@ -115,7 +115,7 @@
 		      </div>
 		      <div class="modal-body">
 			        <p>Select Country</p>
-			        <form method="POST" action="php/change_blacklist.php">
+			        <form method="POST" action="php/blocker.php">
 			        <select name="countries">
 				        <?php
 							$file = fopen("src/blocked_country.txt","r");
@@ -142,8 +142,6 @@
 		</div>
 
 </div>
-<div class="footer">
-  <p>Created By: Earl Austin A. Zuniga (2018)</p>
-</div>
+
 </body>
 </html>
